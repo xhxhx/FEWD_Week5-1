@@ -1,6 +1,11 @@
 $( document ).ready(function() {
         console.log( "document loaded" );
 
+// Function to reset user input value 
+function resetform() {
+  document.getElementById("city-type").reset();
+}
+
 function cityCheck() {
   //Get the value of user input and store it as a variable
   var city = $("#city-type").val();
